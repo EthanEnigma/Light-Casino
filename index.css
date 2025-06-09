@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(180, 30%, 15%);
+}
+
+.header{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Casino.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+    aspect-ratio: 16/9;
+    mask-image: linear-gradient(to top, transparent 0%, black 50%);
+    align-content: center;
+    z-index: 0;
+}
+
+.navbar{
+    top: 0px;
+    margin: 0;
+    padding: 20px;
+    height: 10vh;
+    width: 100%;
+    background-color: hsl(205, 40%, 20%);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 10;
+}
+.navbara{
+    color: white;
+    padding: 10px;
+    font-size: 1.5vw;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+    text-align: center;
+    align-content: center;
+}
+.navbar a:hover{
+    background-color: hsla(0, 0%, 100%, 0.3);
+    transition: ease-in-out 0.2s;
+}
+.navbarAuth{
+    align-content: center;
+}   
+.logo{
+    width: 5vw;
+    margin: 5vw;
+    align-self: center;
+}
+
+.Titre{
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+    padding: 20px;
+}
+.SousTitre{
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    padding: 20px;
+}
+
+.casinoFont{
+    color: hsl(50, 70%, 65%);
+}
+
+
+
+.infosContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    background-color: hsl(180, 30%, 20%);
+    border-radius: 10px;
+    align-content: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.infosIMG{
+    padding: 10px;
+    overflow: hidden;
+    align-content: center;
+}
+.infosImage{
+    border-radius: 10px;
+}
+.infosTXT{
+    color: white;
+    padding: 10px;
+    font-size: 1vw;
+    text-align: center;
+    align-content: center;
+}
+.infosTitle{
+    color: hsl(50, 70%, 65%);
+}
+
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: hsl(205, 40%, 15%);
+    align-content: center;
+    text-align: center;
+    font-size: 1vw;
+}
+.footerImage{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    align-self: center;
+}
+.footerTXT{
+    color: white;
+    text-align: center;
+    align-content: center;
+    background-color: hsl(205, 40%, 20%);
+    border-radius: 5px;
+}
+
+
+
+/* ---------- GAME.PHP ---------- */
+.playerInfosContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(490px,1fr));
+    margin: 20px;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+.usernameinfos{
+    color: white;
+    margin: 1vw;
+    padding: 3vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    cursor: default; 
+    text-decoration: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.soldeinfos{
+    color: white;
+    margin: 1vw;
+    padding: 3vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    cursor: default; 
+    text-decoration: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.customhr{
+    border: hsla(0, 0%, 100%, 0.3) solid 10px;
+    margin: 0px;
+}
+
+.gamesContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
+    margin: 20px;
+    align-content: center;
+}
+.game{
+    background-color: hsl(205, 40%, 20%);
+    border-radius: 10px;
+    margin: 1vw;
+    padding: 1.5vw;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+}
+.gameIMG{
+    aspect-ratio: 16/9;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    
+}
+.gameIMG:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
